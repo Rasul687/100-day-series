@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+            background-color: gray;
+        }
+
+        .container {
+            border: 1px solid black;
+            width: 50%;
+            height: max-content;
+            background-color: white;
+            margin-left: 25%;
+            padding: 3%;
+            border-radius: 5px;
+
+
+        }
+
+
+
+        .form-row {
+            margin-bottom: 10px;
+            display: flex;
+        }
+
+        .form-row label {
+            flex: 1;
+        }
+
+        .form-row input {
+            flex: 5;
+            padding: 2%;
+        }
+
+        .column-layout {
+            background-color: #FFF;
+            max-width: 70%;
+            line-height: 1.65;
+            margin: 40px auto 0 auto;
+            padding: 20px 50px;
+            display: flex;
+
+        }
+
+        .main-column {
+            flex: 2;
+            order: 2;
+            text-align: justify;
+        }
+
+        .sidebar-one {
+            flex: 1;
+            order: 1;
+        }
+
+        .sidebar-two {
+            order: 3;
+            flex: 1;
+        }
+
+        .call-out-container {
+            max-width: 78%;
+            margin: 40px auto 0 auto;
+            display: flex;
+            /* align-items: flex-start; */
+            justify-content: space-between;
+
+
+
+
+
+
+        }
+
+        .call-out {
+            padding: 20px;
+            box-sizing: border-box;
+            margin-bottom: 20px;
+            flex-basis: 30%;
+
+
+
+        }
+
+        /* .call-out:last-child{
+            margin-right: 0%;
+        } */
+        .call-out:nth-child(1) {
+            background-color: pink;
+        }
+
+        .call-out:nth-child(2) {
+            background-color: blue;
+        }
+
+        .call-out:nth-child(3) {
+            background-color: green;
+        }
+
+        @media (max-width:900px) {
+            .call-out-container {
+                display: flex;
+                flex-direction: column;
+            }
+        }
+
+        .ders4 {
+            max-width: 80%;
+            border: 1px solid black;
+            margin: 5% auto 0 auto;
+            background-color: #fff;
+            display: flex;
+            flex-wrap: wrap;
+            padding: 10px;
+
+
+        }
+
+        .ders41 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: red;
+            text-align: center;
+            color: white;
+            padding: 1px;
+            font-size: 50px;
+            margin: 5%;
+
+        }
+
+        .banner{
+            max-width: 50%;
+            background-color: #FFF;
+            margin: 40px auto 0 auto;
+            height: 300px;
+            display: flex;
+           
+
+        }
+        .center{
+        margin: auto;
+        
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Layout with FlexBox</h1>
+        <form action="" method="post" action="/day-2/index.html">
+
+            <div class="form-row">
+                <label for="name">Name:</label>
+                <input type="text" value="" name="" id="name">
+            </div>
+
+            <div class="form-row">
+                <label for="SecretQuestion">SecretQuestion:</label>
+                <input type="text" name="" value="" id="SecrerQuestion">
+            </div>
+        </form>
+
+    </div>
+
+    <div class="column-layout">
+        <div class="main-column">
+            <h2>Main column</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam porro rerum sapiente optio quaerat
+                atque nisi. Dolorem dolor enim in ipsam eveniet suscipit debitis id sequi iusto. Ex eius doloremque
+                reprehenderit modi tempora ipsa ratione eaque qui, officiis veniam cumque animi dolores enim repudiandae
+                voluptates iure illo. Unde praesentium ullam at labore perferendis laborum placeat libero quis adipisci
+                recusandae rerum sequi architecto, alias atque distinctio culpa nostrum ab cumque beatae tempore et?
+                Blanditiis numquam enim vero rerum odio soluta itaque quibusdam quas! Accusantium temporibus distinctio
+                blanditiis porro corporis atque commodi error, sed nam illo facere fuga, harum officia dolorum
+                laudantium.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam porro rerum sapiente optio quaerat
+                atque nisi. Dolorem dolor enim in ipsam eveniet suscipit debitis id sequi iusto. Ex eius doloremque
+                reprehenderit modi tempora ipsa ratione eaque qui, officiis veniam cumque animi dolores enim repudiandae
+                voluptates iure illo. Unde praesentium ullam at labore perferendis laborum placeat libero quis adipisci
+                recusandae rerum sequi architecto, alias atque distinctio culpa nostrum ab cumque beatae tempore et?
+                Blanditiis numquam enim vero rerum odio soluta itaque quibusdam quas! Accusantium temporibus distinctio
+                blanditiis porro corporis atque commodi error, sed nam illo facere fuga, harum officia dolorum
+                laudantium.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam porro rerum sapiente optio quaerat
+                atque nisi. Dolorem dolor enim in ipsam eveniet suscipit debitis id sequi iusto. Ex eius doloremque
+                reprehenderit modi tempora ipsa ratione eaque qui, officiis veniam cumque animi dolores enim repudiandae
+                voluptates iure illo. Unde praesentium ullam at labore perferendis laborum placeat libero quis adipisci
+                recusandae rerum sequi architecto, alias atque distinctio culpa nostrum ab cumque beatae tempore et?
+                Blanditiis numquam enim vero rerum odio soluta itaque quibusdam quas! Accusantium temporibus distinctio
+                blanditiis porro corporis atque commodi error, sed nam illo facere fuga, harum officia dolorum
+                laudantium.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam porro rerum sapiente optio quaerat
+                atque nisi. Dolorem dolor enim in ipsam eveniet suscipit debitis id sequi iusto. Ex eius doloremque
+                reprehenderit modi tempora ipsa ratione eaque qui, officiis veniam cumque animi dolores enim repudiandae
+                voluptates iure illo. Unde praesentium ullam at labore perferendis laborum placeat libero quis adipisci
+                recusandae rerum sequi architecto, alias atque distinctio culpa nostrum ab cumque beatae tempore et?
+                Blanditiis numquam enim vero rerum odio soluta itaque quibusdam quas! Accusantium temporibus distinctio
+                blanditiis porro corporis atque commodi error, sed nam illo facere fuga, harum officia dolorum
+                laudantium.</p>
+
+        </div>
+        <div class="sidebar-one">
+            <h2>sidebar one</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam aperiam officiis quae sint quo id
+                ipsam voluptates, temporibus odio fugit. Tempora reprehenderit aliquam dolores pariatur voluptates nemo
+                at provident perferendis quod! Labore, voluptate. Facilis impedit veniam nostrum. Aspernatur non
+                accusamus praesentium cum nulla. Error sequi quia distinctio hic, quo id.</p>
+        </div>
+
+        <div class="sidebar-two">
+            <h3>Sidebar-two</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, quos vero. Voluptatem eaque sint
+                molestiae. Voluptatum illum praesentium quis! Atque, expedita debitis? Est, ipsa! Cupiditate, at facilis
+                repellendus, delectus reprehenderit quibusdam harum quas accusamus commodi optio repellat laboriosam
+                magnam aliquam. Praesentium dolore culpa ea doloribus ab accusantium veritatis, minima suscipit?</p>
+        </div>
+
+    </div>
+
+    <div class="call-out-container">
+        <div class="call-out">
+            <h4>Feature-1</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus id autem dolorem nostrum dolores
+                itaque nulla sed placeat error recusandae nisi iure temporibus nemo officiis quos veritatis quis vitae,
+                voluptate ratione est maiores. Veritatis earum officiis blanditiis deleniti optio, inventore ullam error
+                facilis modi sequi eaque illum nobis ea labore repellendus consequatur corporis voluptatum maiores
+                porro! </p>
+
+        </div>
+        <!--call-out div-->
+        <div class="call-out">
+            <h4>Feature-2</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus id autem dolorem nostrum dolores
+                itaque nulla sed placeat error recusandae nisi iure temporibus nemo officiis quos veritatis quis vitae,
+                voluptate ratione est maiores. Veritatis earum officiis blanditiis deleniti optio, inventore ullam error
+                facilis </p>
+
+        </div>
+        <!--call-out div-->
+        <div class="call-out">
+            <h4>Feature-3</h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et minus id autem dolorem nostrum dolores
+                itaque </p>
+
+        </div>
+        <!--call-out div-->
+
+    </div>
+    <!--call-out-container div-->
+
+    <div class="ders4">
+
+        <div class="ders41">1</div>
+        <div class="ders41">2</div>
+        <div class="ders41">3</div>
+        <div class="ders41">4</div>
+        <div class="ders41">5</div>
+        <div class="ders41">6</div>
+        <div class="ders41">7</div>
+        <div class="ders41">8</div>
+        <div class="ders41">9</div>
+        <div class="ders41">10</div>
+
+
+
+    </div>
+
+    <div class="banner">
+        <div class="center">Bunu merkeze qoy</div>
+    </div>
+
+</body>
+
+</html>
